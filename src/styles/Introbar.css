@@ -1,0 +1,20 @@
+.Container {
+	position: relative;
+	width: 60vw;
+	height: 52px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 2;
+}
+
+.Logo {
+	margin-left: 5.7rem;
+}
+
+.icon {
+	position: relative;
+	left: -412px;
+	height: 92px;
+}
+

@@ -1,0 +1,78 @@
+.create-container{
+	position: relative;
+	margin-top: 100px;
+	height: 100%;
+	font-weight: 700;
+	font-size: 26px;
+	background-color: #595978;
+	margin-top: -20px;
+	color: white;
+
+}
+
+.submit{
+	margin-top: 30px;
+}
+
+#BtnColor{
+	background-color: red;
+	color: white;
+	border: none;
+	height: 30px;
+	width: 70px;
+	border-radius: 5px;
+	font-weight: 700;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.containerMain{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 125px;
+}
+
+.h3{
+	color: red;
+}
+
+.left{
+	width: 50%;
+	height: 800px;
+}
+
+input{
+	margin-top: 28px;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.right{
+	width: 50%;
+	height: 800px;
+}
+
+.title{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.flip-card{
+	margin-right: 200px;
+}
+
+.description{
+	display: black;
+	text-align: center;
+	width:400px;
+	font-size: 16px;
+	margin-left: auto;
+	margin-right: auto;
+}

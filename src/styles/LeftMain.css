@@ -1,0 +1,46 @@
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+	.left-section{
+		position: relative;
+
+
+		margin-top: 100px;
+	}
+
+	.title{
+		position: relative;
+			left:18px;
+
+	}
+
+	.left-text{
+		position: relative;
+		display: flex;
+		text-align: center;
+		width: 300px;
+		margin-top: 30px;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 32px;
+		color: #dbdced;
+		right:30px;
+
+	}
+
+	
+
+
+}
+

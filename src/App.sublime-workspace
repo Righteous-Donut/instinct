@@ -1,0 +1,366 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ERC",
+				"ERC1155Supply"
+			],
+			[
+				"loD",
+				"loadAllSwaps"
+			],
+			[
+				"Drop",
+				"DropdownButton"
+			],
+			[
+				"Dropdow",
+				"DropdownButton"
+			],
+			[
+				"get",
+				"getContractFactory"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"new ",
+				"File: New File Relative to Current View"
+			],
+			[
+				"new file",
+				"File: New File Relative to Current View"
+			],
+			[
+				"new fi",
+				"File: New File Relative to Current View"
+			],
+			[
+				"new",
+				"File: New File Relative to Current View"
+			],
+			[
+				"ne",
+				"File: New File Relative to Current View"
+			],
+			[
+				"new fil",
+				"File: New File Relative to Current View"
+			],
+			[
+				"new fol",
+				"File: New Folder Relative to Current View"
+			],
+			[
+				"package control",
+				"Package Control: Install Package"
+			],
+			[
+				"prefere",
+				"Preferences: Settings"
+			],
+			[
+				"new f",
+				"File: New View into File"
+			],
+			[
+				"new file ",
+				"File: New View into File"
+			],
+			[
+				"Package Control: list",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: install ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/src/App.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/src/styles/RightMain.css",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/src/pages/CreateNFT.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/src/styles/Background.css",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/src/components/RightMain.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/src/styles/Introbar.css",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/src/styles/HomePage.css",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/src/styles/Navbar.css",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/src/styles/LeftMain.css",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/src/styles/CreateNFT.css",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/src/components/LeftMain.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/src/components/Introbar.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/src/components/Navbar.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/src/assets/background.png",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/src/components/CreateNFTForm.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/src/styles/App.css",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/src/index.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/src/styles/CreateNFTF.css",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/src/webpack.config.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/scripts/deploy.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/contracts/Minted.sol",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/hardhat.config.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/package-lock.json",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/package.json",
+		"/?/home/matt/.npm/_logs/2024-07-17T00_54_46_553Z-debug-0.log",
+		"/?wsl.localhost/Ubuntu/home/matt/code/dapp_punks/src/config.json",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/src/pages/web3StorageService.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/.env",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/src/pages/MintComponent.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/public/index.html",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/src/config.ts",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/src/index.css",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/Assets/xrp-logo.png",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/pages/CreateNFT.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/src/components/abi.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/contracts/Address.sol",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/artifacts/contracts/IERC721Metadata.sol/IERC721Metadata.dbg.json",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/test/CreateNFT.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/src/components/App.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/src/components/Data.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/public/manifest.json",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/contracts/NFT.sol",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/src/config.json",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/src/components/Navigation.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/instinct/test/NFT.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/trading_bot_hardhat/config.json",
+		"/?wsl.localhost/Ubuntu/home/matt/code/trading_bot_hardhat/.env",
+		"/?wsl.localhost/Ubuntu/home/matt/code/trading_bot_hardhat/contracts/Arbitrage.sol",
+		"/?wsl.localhost/Ubuntu/home/matt/code/trading_bot_hardhat/package.json",
+		"/?wsl.localhost/Ubuntu/home/matt/code/trading_bot/README.md",
+		"/?wsl.localhost/Ubuntu/home/matt/code/trading_bot/package-lock.json",
+		"/?wsl.localhost/Ubuntu/home/matt/code/trading_bot/package.json",
+		"/?wsl.localhost/Ubuntu/home/matt/code/trading_bot/hardhat.config.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/trading_bot/config.json",
+		"/?wsl.localhost/Ubuntu/home/matt/code/trading_bot/bot.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/trading_bot/.gitignore",
+		"/?wsl.localhost/Ubuntu/home/matt/code/trading_bot/.env",
+		"/?wsl.localhost/Ubuntu/home/matt/code/trading_bot/test/Arbitrage.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/trading_bot/scripts/manipulate.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/trading_bot/scripts/deploy.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/trading_bot/helpers/server.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/trading_bot/helpers/initialization.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/trading_bot/helpers/helpers.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/trading_bot/contracts/arbitrage.sol",
+		"/?wsl.localhost/Ubuntu/home/matt/code/trading_bot/hardhat.config",
+		"/C/Users/mattp/Downloads/trading_bot_hardhat-master-20240111 (1).zip",
+		"/?wsl.localhost/Ubuntu/home/matt/code/amm/src/store/selectors.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/amm/src/components/Charts.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/amm/src/store/reducers/amm.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/amm/src/store/interactions.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/amm/src/components/Charts.config.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/amm/src/components/Swap.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/amm/src/components/Withdraw.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/amm/src/components/Deposit.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/amm/src/components/Alert.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/amm/src/index.css",
+		"/?wsl.localhost/Ubuntu/home/matt/code/amm/src/components/App.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/amm/src/components/Navigation.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/amm/src/store/reducers/provider.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/amm/src/store/reducers/tokens.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/amm/src/store/store.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/amm/src/components/Tabs.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/amm/scripts/deploy.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/amm/src/config.json",
+		"/?wsl.localhost/Ubuntu/home/matt/code/amm/src/index.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/amm/scripts/seed.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/amm/src/abis/AMM.json",
+		"/?wsl.localhost/Ubuntu/home/matt/code/amm/contracts/AMM.sol",
+		"/?wsl.localhost/Ubuntu/home/matt/code/amm/test/AMM.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/amm/test/Token.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/amm/package.json",
+		"/?wsl.localhost/Ubuntu/home/matt/code/solidity_intensive/test/Variables.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/solidity_intensive/test/Types.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/solidity_intensive/contracts/Types.sol",
+		"/?wsl.localhost/Ubuntu/home/matt/code/solidity_intensive/test/Time.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/solidity_intensive/test/Structs.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/solidity_intensive/test/Operators.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/solidity_intensive/test/Mappings.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/solidity_intensive/test/Loops.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/solidity_intensive/test/Interactions.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/solidity_intensive/test/Inheritance.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/solidity_intensive/test/Functions.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/solidity_intensive/test/Events.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/solidity_intensive/test/Ether.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/solidity_intensive/test/Errors.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/solidity_intensive/test/Enums.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/solidity_intensive/test/Contructors.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/solidity_intensive/test/Conditionals.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/solidity_intensive/test/Arrays.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/solidity_intensive/scripts/deploy.js",
+		"/?wsl.localhost/Ubuntu/home/matt/code/solidity_intensive/contracts/Variables.sol",
+		"/?wsl.localhost/Ubuntu/home/matt/code/solidity_intensive/contracts/Token.sol",
+		"/?wsl.localhost/Ubuntu/home/matt/code/solidity_intensive/contracts/Time.sol",
+		"/?wsl.localhost/Ubuntu/home/matt/code/solidity_intensive/contracts/Structs.sol",
+		"/?wsl.localhost/Ubuntu/home/matt/code/solidity_intensive/contracts/Operators.sol",
+		"/?wsl.localhost/Ubuntu/home/matt/code/solidity_intensive/contracts/Mappings.sol",
+		"/?wsl.localhost/Ubuntu/home/matt/code/solidity_intensive/contracts/Loops.sol",
+		"/?wsl.localhost/Ubuntu/home/matt/code/solidity_intensive/contracts/Interactions.sol",
+		"/?wsl.localhost/Ubuntu/home/matt/code/solidity_intensive/contracts/Inheritance.sol",
+		"/?wsl.localhost/Ubuntu/home/matt/code/solidity_intensive/contracts/Functions.sol",
+		"/?wsl.localhost/Ubuntu/home/matt/code/solidity_intensive/contracts/Events.sol",
+		"/?wsl.localhost/Ubuntu/home/matt/code/solidity_intensive/contracts/Ether.sol",
+		"/?wsl.localhost/Ubuntu/home/matt/code/solidity_intensive/contracts/Errors.sol",
+		"/?wsl.localhost/Ubuntu/home/matt/code/solidity_intensive/contracts/Enums.sol",
+		"/?wsl.localhost/Ubuntu/home/matt/code/solidity_intensive/contracts/Constructors.sol",
+		"/?wsl.localhost/Ubuntu/home/matt/code/solidity_intensive/contracts/Conditionals.sol",
+		"/?wsl.localhost/Ubuntu/home/matt/code/solidity_intensive/contracts/Arrays.sol",
+		"/?wsl.localhost/Ubuntu/home/matt/code/solidity_intensive/hardhat.config.js"
+	],
+	"find":
+	{
+		"height": 43.0
+	},
+	"find_in_files":
+	{
+		"height": 205.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 43.0
+	},
+	"input":
+	{
+		"height": 71.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "App.sublime-project",
+	"replace":
+	{
+		"height": 82.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 217.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

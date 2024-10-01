@@ -1,0 +1,40 @@
+.container {
+	width: 100vw;
+	height: 62px;
+	background-color: black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	margin-left: 3rem;
+}
+
+.faucet{
+	margin-left: 3rem;
+	background-color: #ff2c2c;
+	color: white;
+	height: 30px;
+	font-weight: 700;
+	border-radius: 5px;
+	padding-bottom: 5px;
+}
+.connectBtnContainer {
+	margin-right: 3rem;
+}
+
+.connectBtn {
+	width: 93px;
+	height: 27px;
+	left: 1233px;
+	top: 19px;
+	color: white;
+	font-size: 12px;
+	font-weight: 700;
+	background: #ff2c2c;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+}
+

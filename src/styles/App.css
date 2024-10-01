@@ -1,0 +1,26 @@
+.App {
+	text-align: center;
+}
+
+.App-header {
+	background-color: #705576;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	color: white;
+}
+
+.main{
+	display: flex;
+	/* justify-content: space-between; */
+}
+
+
+@media only screen and (max-width: 600px) {
+
+	.main{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+}

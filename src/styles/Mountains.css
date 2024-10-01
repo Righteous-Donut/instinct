@@ -1,0 +1,57 @@
+
+.left-main-container {
+	width: 60%;
+	height: 100%;
+	position: absolute;
+	align-items: left;
+	left: 0;
+	top: 0;
+}
+
+
+
+.Mountains-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1; 
+}
+
+.Mountains {
+    width: 100%;
+    height: 100%;
+    z-index: 1; 
+    display: block;
+    object-fit: cover;
+}
+
+.title {
+	width: 220px;
+	z-index: 2;
+}
+
+.left-text {
+	display: flex;
+	text-allign: left;
+	width: 452px;
+	margin-top: -620px;
+	margin-left: 250px;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 42px;
+	color: #eddddb;
+	z-index: 2;
+}
+
+.types{
+	position: relative;
+	display: flex;
+	font-size: 16px;
+	width:450px;
+	margin-left:250px;
+	margin-top:5px;
+	color: #d8c3da;
+}
