@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import '../styles/HomePage.css';
 import '../styles/RightMain.css';
 import '../styles/Background.css';
-import '../styles/Mountains.css';
+import '../styles/Black.css';
 import '../styles/Introbar.css';
 import '../styles/LeftMain.css';
 

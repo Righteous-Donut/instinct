@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
-import { mint } from './web3StorageService';
+import { ethers } from 'ethers';
+import NFT from './NFT.json';
+import config from './config.json';
+import { mint } from './web3StorageService'; 
 
 function MintComponent() {
   const [file, setFile] = useState(null);
