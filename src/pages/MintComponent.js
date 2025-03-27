@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
-import { ethers } from 'ethers';
-import NFT from './NFT.json';
-import config from './config.json';
-import { mint } from './web3StorageService'; 
+import { uploadFiles } from './web3StorageService';
 
 function MintComponent() {
   const [file, setFile] = useState(null);
@@ -15,7 +12,8 @@ function MintComponent() {
   const handleMint = async () => {
     if (file) {
       try {
-        const cid = await mint(file);
+        // uploadFiles expects an array of files
+        const cid = await uploadFiles([file]);
         console.log('Minted with CID:', cid);
         setMessage(`Minted successfully with CID: ${cid}`);
       } catch (error) {

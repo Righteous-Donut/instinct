@@ -1,50 +1,60 @@
 import { Web3Storage } from 'web3.storage';
+import { createConfig, http } from 'wagmi';
+import { mainnet, sepolia } from 'wagmi/chains';
+import { createPublicClient } from 'viem';
+import { getDefaultWallets } from '@rainbow-me/rainbowkit';
 
-// Fetch API token and DID key from environment variables
+// === Web3.Storage ===
+
 function getAccessToken() {
-    return process.env.REACT_APP_WEB3STORAGE_TOKEN; // Web3.Storage token
+  return process.env.REACT_APP_WEB3STORAGE_TOKEN;
 }
 
-function getDidKey() {
-    return process.env.REACT_APP_DID_KEY; // DID key
-}
-
-// Create a Web3Storage client with Web3.Storage token
-const createConfig = () => {
-    return new Web3Storage({ token: getAccessToken() });
+const createWeb3StorageClient = () => {
+  return new Web3Storage({ token: getAccessToken() });
 };
 
-// Create file objects to be uploaded
-export const makeFileObjects = (fileName, fileData) => {
+const uploadFiles = async (files) => {
+  try {
+    if (!files || files.length === 0) throw new Error('No files provided for upload');
+    const client = createWeb3StorageClient();
+    const cid = await client.put(files, { wrapWithDirectory: false });
+    return cid;
+  } catch (error) {
+    console.error('Failed to upload files:', error);
+    throw error;
+  }
+};
+
+const makeFileObjects = (fileName, fileData) => {
+  try {
+    if (!fileName || !fileData) throw new Error('Invalid file name or data');
     const blob = new Blob([fileData], { type: 'application/json' });
-    const files = [
-        new File([blob], `${fileName}.json`)
-    ];
-    return files;
+    return [new File([blob], `${fileName}.json`)];
+  } catch (error) {
+    console.error('Error creating file objects:', error);
+    throw error;
+  }
 };
 
-// Upload files using the Web3.Storage API
-export const uploadFiles = async (files) => {
-    try {
-        const client = createConfig();
-        const cid = await client.put(files, {
-            wrapWithDirectory: false, // Optional: prevents wrapping in a directory
-        });
-        console.log('Stored files with CID:', cid);
-        return cid;
-    } catch (error) {
-        console.error('Failed to upload files:', error);
-    }
-};
+// === Wagmi v2 + RainbowKit Setup ===
 
-// Function to mint NFT (mocked version, adjust it to your NFT smart contract logic)
-export const mintNFT = async (cid, contract) => {
-    try {
-        console.log('Minting NFT with CID:', cid);
-        const tx = await contract.mintNFT(cid);
-        await tx.wait();
-        console.log('NFT minted successfully');
-    } catch (error) {
-        console.error('Failed to mint NFT:', error);
-    }
-};
+const chains = [mainnet, sepolia];
+
+const { connectors } = getDefaultWallets({
+  appName: 'My DApp',
+  projectId: 'no-qr-needed',
+  chains
+});
+
+const wagmiConfig = createConfig({
+  autoConnect: true,
+  connectors,
+  publicClient: createPublicClient({
+    chain: mainnet,
+    transport: http()
+  }),
+  chains
+});
+
+export { uploadFiles, makeFileObjects, wagmiConfig, chains };

@@ -1,11 +1,10 @@
 .create-container{
 	position: relative;
-	margin-top: 100px;
 	height: 100%;
 	font-weight: 700;
 	font-size: 26px;
 	background-color: #595978;
-	margin-top: -20px;
+	margin-top: -50px;
 	color: white;
 
 }
