@@ -1,60 +1,45 @@
-import { Web3Storage } from 'web3.storage';
-import { createConfig, http } from 'wagmi';
-import { mainnet, sepolia } from 'wagmi/chains';
-import { createPublicClient } from 'viem';
-import { getDefaultWallets } from '@rainbow-me/rainbowkit';
+import axios from 'axios';
 
-// === Web3.Storage ===
+const PINATA_JWT = process.env.REACT_APP_PINATA_JWT;
 
-function getAccessToken() {
-  return process.env.REACT_APP_WEB3STORAGE_TOKEN;
+if (!PINATA_JWT) {
+  throw new Error('Missing Pinata JWT. Set REACT_APP_PINATA_JWT in your .env');
 }
 
-const createWeb3StorageClient = () => {
-  return new Web3Storage({ token: getAccessToken() });
-};
+const pinataBaseURL = 'https://api.pinata.cloud/pinning';
 
-const uploadFiles = async (files) => {
+const uploadJSONToPinata = async (metadata) => {
   try {
-    if (!files || files.length === 0) throw new Error('No files provided for upload');
-    const client = createWeb3StorageClient();
-    const cid = await client.put(files, { wrapWithDirectory: false });
-    return cid;
+    const res = await axios.post(`${pinataBaseURL}/pinJSONToIPFS`, metadata, {
+      headers: {
+        Authorization: `Bearer ${PINATA_JWT}`,
+        'Content-Type': 'application/json',
+      },
+    });
+    return res.data.IpfsHash;
   } catch (error) {
-    console.error('Failed to upload files:', error);
+    console.error('Failed to upload JSON to Pinata:', error);
     throw error;
   }
 };
 
-const makeFileObjects = (fileName, fileData) => {
+const uploadFileToPinata = async (file) => {
   try {
-    if (!fileName || !fileData) throw new Error('Invalid file name or data');
-    const blob = new Blob([fileData], { type: 'application/json' });
-    return [new File([blob], `${fileName}.json`)];
+    const formData = new FormData();
+    formData.append('file', file);
+
+    const res = await axios.post(`${pinataBaseURL}/pinFileToIPFS`, formData, {
+      maxContentLength: Infinity,
+      headers: {
+        Authorization: `Bearer ${PINATA_JWT}`,
+        'Content-Type': 'multipart/form-data',
+      },
+    });
+    return res.data.IpfsHash;
   } catch (error) {
-    console.error('Error creating file objects:', error);
+    console.error('Failed to upload file to Pinata:', error);
     throw error;
   }
 };
 
-// === Wagmi v2 + RainbowKit Setup ===
-
-const chains = [mainnet, sepolia];
-
-const { connectors } = getDefaultWallets({
-  appName: 'My DApp',
-  projectId: 'no-qr-needed',
-  chains
-});
-
-const wagmiConfig = createConfig({
-  autoConnect: true,
-  connectors,
-  publicClient: createPublicClient({
-    chain: mainnet,
-    transport: http()
-  }),
-  chains
-});
-
-export { uploadFiles, makeFileObjects, wagmiConfig, chains };
+export { uploadJSONToPinata, uploadFileToPinata };

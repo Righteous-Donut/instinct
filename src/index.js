@@ -9,7 +9,7 @@ import { RainbowKitProvider, getDefaultWallets } from '@rainbow-me/rainbowkit';
 import '@rainbow-me/rainbowkit/styles.css';
 
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { wagmiConfig, chains } from './pages/web3StorageService';
+import { wagmiConfig, chains } from './wagmiConfig';
 
 const queryClient = new QueryClient();
 
