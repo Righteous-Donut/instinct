@@ -9,12 +9,16 @@ const CreateNFTForm = () => {
   const [name, setName] = useState('');
   const [description, setDescription] = useState('');
   const [image, setImage] = useState(null);
+  const [imagePreview, setImagePreview] = useState(null);
   const [status, setStatus] = useState('');
   const [ipfsUrl, setIpfsUrl] = useState(null);
 
   const handleImageChange = (e) => {
     const file = e.target.files[0];
-    if (file) setImage(file);
+    if (file) {
+      setImage(file);
+      setImagePreview(URL.createObjectURL(file));
+    }
   };
 
   const handleSubmit = async (e) => {
@@ -59,19 +63,27 @@ const CreateNFTForm = () => {
   console.log("WalletConnect Project ID:", walletConnectProjectId);
 
   return (
-    <form className="create-nft-form" onSubmit={handleSubmit}>
-      <h2>Create and Mint NFT</h2>
-      <input type="text" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} required />
-      <textarea placeholder="Description" value={description} onChange={(e) => setDescription(e.target.value)} required />
-      <input type="file" accept="image/*" onChange={handleImageChange} required />
-      <button type="submit">Mint NFT</button>
-      <p>{status}</p>
-      {ipfsUrl && (
-        <p>
-          Metadata IPFS URL: <a href={ipfsUrl} target="_blank" rel="noopener noreferrer">{ipfsUrl}</a>
-        </p>
+    <div className="form-layout">
+      <form className="create-nft-form" onSubmit={handleSubmit}>
+        <h2 className="mint-title">Create and Mint NFT</h2>
+        <input type="text" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} required />
+        <textarea placeholder="Description" value={description} onChange={(e) => setDescription(e.target.value)} required />
+        <input type="file" accept="image/*" onChange={handleImageChange} required />
+        <button type="submit">Mint NFT</button>
+        <p>{status}</p>
+        {ipfsUrl && (
+          <p>
+            Metadata IPFS URL: <a href={ipfsUrl} target="_blank" rel="noopener noreferrer">{ipfsUrl}</a>
+          </p>
+        )}
+      </form>
+
+      {imagePreview && (
+        <div className="image-preview-wrapper">
+          <img src={imagePreview} alt="Preview" className="image-preview" />
+        </div>
       )}
-    </form>
+    </div>
   );
 };
 

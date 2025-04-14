@@ -6,13 +6,14 @@ import icon from '../assets/icon.png';
 const Introbar = () => {
 	return (
 	    <div className='Container'>
-	      <div className="Logo">
-	        <img className='logo-image' src={logo} alt="minted Logo" />
-	      </div>
-	      <div className="icon">
-	      	<img className='icon' src={icon} alt="icon" />
-	      </div>
-	    </div>
+		  <div className="icon">
+		    <img className='icon' src={icon} alt="icon" />
+		  </div>
+		  <div className="Logo">
+		    <img className='logo-image' src={logo} alt="minted Logo" />
+		  </div>
+		</div>
+
 	);
 }
 

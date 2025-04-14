@@ -1,20 +1,18 @@
 .Container {
-	position: relative;
-	width: 60vw;
-	height: 52px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+  padding: 0 2rem;
 }
 
-.Logo {
-	margin-left: 5.7rem;
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
 }
 
 .icon {
-	position: relative;
-	left: -412px;
-	height: 92px;
+  height: 71px;
+  width: auto;
+  flex-shrink: 0;
 }
-

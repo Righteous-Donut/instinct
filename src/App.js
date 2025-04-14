@@ -45,7 +45,7 @@ function App() {
         <Introbar />
         <div className="wallet-info">
           {account ? (
-            <p>Connected Account: {account}</p>
+            <p className="connected-account">Connected Account: {account}</p>
           ) : (
             <p>No wallet connected</p>
           )}

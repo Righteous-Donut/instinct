@@ -1,77 +1,62 @@
-.create-container{
-	position: relative;
-	height: 100%;
-	font-weight: 700;
-	font-size: 26px;
-	background-color: #595978;
-	margin-top: -50px;
-	color: white;
-
+.mint-title {
+  color: #cdcfaf;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.submit{
-	margin-top: 30px;
+.connected-account {
+  color: #900C3F;
+  font-size: 18px;
+  font-family: monospace;
+  margin: 10px 20px 10px 0;
+  text-align: right;
 }
 
-#BtnColor{
-	background-color: red;
-	color: white;
-	border: none;
-	height: 30px;
-	width: 70px;
-	border-radius: 5px;
-	font-weight: 700;
-	margin-left: auto;
-	margin-right: auto;
+.form-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 185px;
+  padding: 50px;
+  flex-wrap: wrap;
 }
 
-.containerMain{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 125px;
+.image-preview-wrapper {
+  max-width: 300px;
 }
 
-.h3{
-	color: red;
+.image-preview {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.2);
 }
 
-.left{
-	width: 50%;
-	height: 800px;
+.create-nft-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 20px;
 }
 
-input{
-	margin-top: 28px;
+.create-nft-form input,
+.create-nft-form textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 16px;
 }
 
-form{
-	display: flex;
-	flex-direction: column;
-	width: 300px;
-	margin-left: auto;
-	margin-right: auto;
+.create-nft-form button {
+  padding: 10px 20px;
+  background-color: #00ffd0;
+  border: none;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-.right{
-	width: 50%;
-	height: 800px;
-}
-
-.title{
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.flip-card{
-	margin-right: 200px;
-}
-
-.description{
-	display: black;
-	text-align: center;
-	width:400px;
-	font-size: 16px;
-	margin-left: auto;
-	margin-right: auto;
+.create-nft-form button:hover {
+  background-color: #00cca6;
 }
