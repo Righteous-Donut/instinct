@@ -43,13 +43,6 @@ function App() {
     <div className="App">
       <Suspense fallback={<div>Loading...</div>}>
         <Introbar />
-        <div className="wallet-info">
-          {account ? (
-            <p className="connected-account">Connected Account: {account}</p>
-          ) : (
-            <p>No wallet connected</p>
-          )}
-        </div>
         <div className="main-content">
           <Routes>
             <Route

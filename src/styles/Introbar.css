@@ -1,8 +1,17 @@
 .Container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 0.1rem;
   padding: 0 2rem;
+  flex-wrap: wrap;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
 }
 
 .logo {
@@ -15,4 +24,31 @@
   height: 71px;
   width: auto;
   flex-shrink: 0;
+}
+
+.faucet{
+  margin-left: 3rem;
+  background-color: #ff2c2c;
+  color: white;
+  height: 30px;
+  font-weight: 700;
+  border-radius: 5px;
+  padding-bottom: 5px;
+}
+.connectBtnContainer {
+  margin-right: 3rem;
+}
+
+.connectBtn {
+  width: 93px;
+  height: 27px;
+  left: 1233px;
+  top: 19px;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  background: #ff2c2c;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
 }
