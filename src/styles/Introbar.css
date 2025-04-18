@@ -10,7 +10,7 @@
 .logo-section {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.1rem;
   flex-shrink: 0;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .icon {
-  height: 71px;
+  height: 65px;
   width: auto;
   flex-shrink: 0;
 }

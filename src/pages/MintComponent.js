@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { uploadFiles } from './web3StorageService';
+import Introbar from '../components/Introbar';
 
 function MintComponent() {
   const [file, setFile] = useState(null);
@@ -12,7 +13,6 @@ function MintComponent() {
   const handleMint = async () => {
     if (file) {
       try {
-        // uploadFiles expects an array of files
         const cid = await uploadFiles([file]);
         console.log('Minted with CID:', cid);
         setMessage(`Minted successfully with CID: ${cid}`);
@@ -27,11 +27,14 @@ function MintComponent() {
   };
 
   return (
-    <div>
-      <input type="file" onChange={handleFileChange} />
-      <button onClick={handleMint}>Mint</button>
-      <p>{message}</p>
-    </div>
+    <>
+      <Introbar />
+      <div>
+        <input type="file" onChange={handleFileChange} />
+        <button onClick={handleMint}>Mint</button>
+        <p>{message}</p>
+      </div>
+    </>
   );
 }
 

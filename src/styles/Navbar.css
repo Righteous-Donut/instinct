@@ -1,40 +1,36 @@
-.container {
-	width: 100vw;
-	height: 62px;
-	background-color: black;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  z-index: 9999;
 }
 
-.logo {
-	margin-left: 3rem;
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+  flex-shrink: 0;
 }
 
-.faucet{
-	margin-left: 3rem;
-	background-color: #ff2c2c;
-	color: white;
-	height: 30px;
-	font-weight: 700;
-	border-radius: 5px;
-	padding-bottom: 5px;
-}
-.connectBtnContainer {
-	margin-right: 3rem;
+.icon {
+  height: 65px;
+  width: auto;
+  flex-shrink: 0;
 }
 
-.connectBtn {
-	width: 93px;
-	height: 27px;
-	left: 1233px;
-	top: 19px;
-	color: white;
-	font-size: 12px;
-	font-weight: 700;
-	background: #ff2c2c;
-	border-radius: 10px;
-	border: none;
-	cursor: pointer;
+.logo-image {
+  height: 58px;
+  width: auto;
 }
 
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
