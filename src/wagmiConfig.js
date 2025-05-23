@@ -1,9 +1,9 @@
 import { createConfig, http } from 'wagmi';
-import { mainnet, sepolia } from 'wagmi/chains';
+import { mainnet, sepolia, hardhat } from 'wagmi/chains'; // Import hardhat
 import { createPublicClient } from 'viem';
 import { getDefaultWallets } from '@rainbow-me/rainbowkit';
 
-const chains = [mainnet, sepolia];
+const chains = [mainnet, sepolia, hardhat]; 
 
 const { connectors } = getDefaultWallets({
   appName: 'Instinct',
@@ -15,8 +15,8 @@ const wagmiConfig = createConfig({
   autoConnect: true,
   connectors,
   publicClient: createPublicClient({
-    chain: mainnet,
-    transport: http()
+    chain: hardhat, 
+    transport: http(),
   }),
   chains,
 });

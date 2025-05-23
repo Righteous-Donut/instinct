@@ -27,11 +27,9 @@ const CreateNFTForm = () => {
     setIpfsUrl(null);
 
     try {
-      // Upload image file
       const imageCid = await uploadFileToPinata(image);
       const imageUrl = `https://gateway.pinata.cloud/ipfs/${imageCid}`;
 
-      // Create and upload metadata
       const metadata = {
         name,
         description,
@@ -40,22 +38,29 @@ const CreateNFTForm = () => {
       const metadataCid = await uploadJSONToPinata(metadata);
       const metadataUrl = `https://gateway.pinata.cloud/ipfs/${metadataCid}`;
 
-      // Interact with smart contract
       setStatus('Minting NFT on blockchain...');
       const provider = new ethers.providers.Web3Provider(window.ethereum);
       await provider.send("eth_requestAccounts", []);
       const signer = provider.getSigner();
       const contract = new ethers.Contract(address, abi, signer);
 
+      const valueToSend = ethers.utils.parseEther("0.01");
+
+      console.log("Mint parameters:");
+      console.log("Units to mint:", 1);
+      console.log("Metadata URI:", metadataUrl);
+      console.log("Transaction options:", { value: valueToSend });
+
       await contract.mint(1, metadataUrl, {
-        value: ethers.utils.parseEther("0.01")
+        value: valueToSend
       });
 
       setStatus('NFT minted successfully!');
       setIpfsUrl(metadataUrl);
     } catch (error) {
       console.error('Error minting file:', error);
-      setStatus(`Error minting file: ${error.message}`);
+      const message = error?.reason || error?.message || 'Unknown error';
+      setStatus(`Error minting: ${message}`);
     }
   };
 

@@ -24,3 +24,4 @@ const LeftMain = () => {
 };
 
 export default LeftMain;
+ 

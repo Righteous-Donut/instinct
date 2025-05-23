@@ -8,7 +8,7 @@ module.exports = function override(config, env) {
     );
   }
 
-  // Optional: Add your fallback configuration (if needed)
+ 
   config.resolve.fallback = {
     ...config.resolve.fallback,
     process: require.resolve('process/browser.js'),

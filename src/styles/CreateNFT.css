@@ -5,20 +5,20 @@
   margin-bottom: 20px;
 }
 
-
-
 .form-layout {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 185px;
+  gap: 80px;
   padding: 50px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; 
 }
 
 .image-preview-wrapper {
   max-width: 300px;
+  margin-top: 55px;
 }
+
 
 .image-preview {
   width: 100%;

@@ -19,6 +19,9 @@ async function main() {
   const Minted = await ethers.getContractFactory("Minted");
   const minted = await Minted.deploy();
 
+  // Wait for deployment to complete
+  await minted.deployed();
+
   console.log("Contract deployed to:", minted.address);
 }
 

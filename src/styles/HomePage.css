@@ -1,16 +1,23 @@
 .create-nft-container {
-	background-color: #595978;
-	padding: 80px;
+  background-color: #595978;
+  padding: 80px;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .buttons-container {
-	font-size: 2rem;
-	
+  font-size: 2rem;
 }
 
-
-
-
 body {
-    background-color: #595978;
+  background-color: #595978;
+}
+
+@media (max-width: 768px) {
+  .create-nft-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
 }

@@ -1,14 +1,11 @@
-
 .left-main-container {
 	width: 60%;
-	height: 100%;
-	position: absolute;
+	height: 100vh;
+	position: relative;
+	justify-content: center;
 	align-items: left;
-	left: 0;
-	top: 0;
+	
 }
-
-
 
 .Black-container {
     position: absolute;
@@ -35,8 +32,9 @@
 
 .left-text {
 	display: flex;
-	text-allign: left;
-	width: 452px;
+	text-align: left;
+	width: 100%;
+	max-width: 480px;
 	margin-top: -620px;
 	margin-left: 250px;
 	font-weight: 400;
@@ -55,3 +53,11 @@
 	margin-top:5px;
 	color: #d8c3da;
 }
+
+@media only screen and (max-width: 768px) {
+  .left-main-container {
+    width: 100%;
+    padding: 1rem;
+    flex-direction: column;
+  }
+ }
