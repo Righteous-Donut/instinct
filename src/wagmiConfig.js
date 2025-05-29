@@ -1,5 +1,5 @@
 import { createConfig, http } from 'wagmi';
-import { mainnet, sepolia, hardhat } from 'wagmi/chains'; // Import hardhat
+import { mainnet, sepolia, hardhat } from 'wagmi/chains'; 
 import { createPublicClient } from 'viem';
 import { getDefaultWallets } from '@rainbow-me/rainbowkit';
 
@@ -7,7 +7,7 @@ const chains = [mainnet, sepolia, hardhat];
 
 const { connectors } = getDefaultWallets({
   appName: 'Instinct',
-  projectId: process.env.REACT_APP_REOWN_PROJECT_ID,
+  projectId: process.env.REACT_APP_PINATA_JWT,
   chains,
 });
 
