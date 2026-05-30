@@ -45,7 +45,7 @@
     "eject": "react-scripts eject"
   },
   "author": "mewt7109@gmail.com",
-  "license": "ISC",
+  "license": "Unlicensed",
   "eslintConfig": {
     "extends": [
       "react-app",
