@@ -5,7 +5,7 @@ import './index.css';
 
 import { BrowserRouter } from 'react-router-dom';
 import { WagmiConfig } from 'wagmi';
-import { RainbowKitProvider, getDefaultWallets } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
 import '@rainbow-me/rainbowkit/styles.css';
 
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';

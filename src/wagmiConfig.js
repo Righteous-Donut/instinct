@@ -1,24 +1,26 @@
 import { createConfig, http } from 'wagmi';
-import { mainnet, sepolia, hardhat } from 'wagmi/chains'; 
-import { createPublicClient } from 'viem';
-import { getDefaultWallets } from '@rainbow-me/rainbowkit';
+import { mainnet, hardhat } from 'wagmi/chains';
+import { injected, coinbaseWallet } from '@wagmi/connectors';
 
-const chains = [mainnet, sepolia, hardhat]; 
-
-const { connectors } = getDefaultWallets({
-  appName: 'Instinct',
-  projectId: process.env.REACT_APP_PINATA_JWT,
-  chains,
-});
+const chains = [mainnet, hardhat];
 
 const wagmiConfig = createConfig({
-  autoConnect: true,
-  connectors,
-  publicClient: createPublicClient({
-    chain: hardhat, 
-    transport: http(),
-  }),
   chains,
+  connectors: [
+    injected({
+      target: 'metaMask',
+    }),
+    injected({
+      target: 'braveWallet',
+    }),
+    coinbaseWallet({
+      appName: 'Instinct',
+    }),
+  ],
+  transports: {
+    [mainnet.id]: http(),
+    [hardhat.id]: http('http://127.0.0.1:8545'),
+  },
 });
 
 export { wagmiConfig, chains };

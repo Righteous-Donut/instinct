@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/token/ERC1155/extensions/ERC1155Supply.sol";
 
 contract Minted is ERC1155, Ownable, ERC1155Supply {
-    uint256 public cost = 0.01 ether;
+    uint256 public cost = 0.0001 ether;
     uint256 private _tokenIdCounter = 0;
 
     constructor() ERC1155("") {}

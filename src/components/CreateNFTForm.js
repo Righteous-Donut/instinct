@@ -44,7 +44,7 @@ const CreateNFTForm = () => {
       const signer = provider.getSigner();
       const contract = new ethers.Contract(address, abi, signer);
 
-      const valueToSend = ethers.utils.parseEther("0.01");
+      const valueToSend = ethers.utils.parseEther("0.0001");
 
       console.log("Mint parameters:");
       console.log("Units to mint:", 1);
